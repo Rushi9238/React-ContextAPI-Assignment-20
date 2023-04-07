@@ -1,38 +1,111 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  /* border: 2px solid blue; */
+  height: 100vh;
+  width: 100%;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.navbar{
+  /* border: 2px solid red; */
+  height: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: lightslategray;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.navbar ul{
+    /* border: 2px solid red; */
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar ul li{
+    list-style-type: none;
+    font-size: 1.4rem;
+    cursor: pointer;
 }
+.home{
+    /* border: 2px solid red; */
+    margin: 2rem;
+    height: 90%;
+  }
+  .home h1{
+    padding: 2rem;
+  }
+  .home p{
+    font-size: 1.4rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
+  }
+  .login{
+    /* border: 2px solid red; */
+    box-shadow: 5px 5px 10px black;
+    height: 60%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: .5rem;
+    border-radius: 10px;
+    background-color: #A8E890;
+    
+  }
+  .login h1{
+    /* border: 2px solid red; */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+
+  }
+  .login .userName{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 30%;
+    padding: .5rem;
+
+  }
+  .login .userPassword{
+
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 30%;
+    padding: .5rem;
+
+
+  }
+  .login .btn{
+    /* border: 2px solid red; */
+    height: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+  }
+  .login button{
+    height: 100%;
+    width: 40%;
+    font-size: 1.3rem;
+    outline: none;
+   
+  }
+  .login input{
+    height: 40%;
+    width: 90%;
+    font-size: 1.2rem;
+    padding-left: 1rem;
+    outline: none;
+  }
+  .login label{
+    font-size: 1.4rem;
+    padding-left: 1rem;
+  }
